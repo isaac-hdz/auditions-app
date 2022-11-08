@@ -1,0 +1,9 @@
+{
+  "name": "auditions-app",
+  "version": "1.0.0",
+  "description": "An app for actor's to keep track of their auditions.",
+  "main": "index.js",
+  "repository": "https://github.com/isaac-hdz/auditions-app.git",
+  "author": "Isaac Hernandez <isaac.hho@gmail.com>",
+  "license": "MIT"
+}
