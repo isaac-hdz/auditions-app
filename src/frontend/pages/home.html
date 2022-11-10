@@ -1,0 +1,68 @@
+<!-- these are HTML notes -->
+
+<!-- Websites are like human bodies.
+      HTML is like the skeleton. It's the building blocks that shape the site.
+      CSS is like the skin hair. It's what makes the site look pretty.
+      JavaScript is like the muscles and nervous system. It's what makes the site move.
+-->
+
+<!DOCTYPE html> <!-- this goes at the top of an HTML file -->
+<html lang="en">
+
+  <!-- the head section is used for setting metadata -->
+  <head> 
+    <!-- like the character set -->
+    <meta charset="UTF-8">
+    <!-- or the title that shows up on the tab of your browser -->
+    <title>Page Title</title>
+    <!-- or width settings for different device sizes -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- or importing stylesheets -->
+    <link rel="stylesheet" href="../stylesheets/main.css">
+    <!-- or importing scripts -->
+    <script src="../javascript/main.js"></script>
+  </head>
+
+  <!-- HTML elements can open and close, or open/close in one -->
+  <!-- 
+    <div> <-- open
+      <p>Some text</p>
+      <p>Some more text</p>
+    </div> <-- the slash "/" shows that we're closing it
+    
+    You could technically do everything above like: <div><p>Some text</p><p>Some more text</p></div>
+    It's the same HTML, but with the white space its easier to read:
+      1. The extra lines make it easy because the different elements are separated by lines (when possible)
+      2. The indentation makes it easier to see what is inside the div and where it closes.
+  -->
+
+  <!-- the body is where the content goes -->
+  <body>
+    <!-- a div is a section in html -->
+    <div>
+      <!-- h1, h2, h3 are different header types (of different sizes, boldness, etc.) -->
+      <h1>This is a Heading</h1>
+      <!-- p is for text -->
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+    </div>
+
+    <!-- hr is for a horizontal line -->
+    <hr>
+
+    <!-- body, div, p, h1, hr, etc. are all "elements" -->
+
+    <!-- class is to categorize certain elements so that you can style them or add js rules to all of them together -->
+    <div class="click-me">Click me!</div>
+    <!-- br is a line BReak = extra space -->
+    <br />
+    <div class="click-me">Click me too!</div>
+    <br />
+    <div class="click-me">Click me three!</div>
+
+    <br /><br />
+    <!-- id is to give an element a unique identifier. it works like class but only 1 element should have a specific id -->
+    <div id="special-click-me">Special click me!</div>
+  </body>
+
+</html>
