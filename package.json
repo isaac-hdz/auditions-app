@@ -1,0 +1,21 @@
+{
+  "name": "auditions-app",
+  "version": "1.0.0",
+  "description": "An app for actor's to keep track of their auditions.",
+  "main": "src/index.js",
+  "repository": "https://github.com/isaac-hdz/auditions-app.git",
+  "author": "Isaac Hernandez <isaac.hho@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:api": "node src/backend/api/index.js",
+    "dev:ui:mac": "open src/frontend/pages/home.html",
+    "dev:ui:windows": "start src/frontend/pages/home.html"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "yarn": "1.22.10",
+    "node": "<=19.0.1"
+  }
+}
