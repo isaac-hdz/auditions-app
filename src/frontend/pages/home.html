@@ -94,12 +94,14 @@
     console.log('The script tag JS is running...');
 
     $(document).ready(function() {
+
       // i'll give you the first one:
       $('.click-me').on('click', function(e) {
         console.log('This is happening!');
         e.target.innerHTML = "<div>CHANGED!</div>";
         // we don't need the return here, jQuery makes this a little easier
       });
+
     });
   </script>
 </html>
