@@ -24,7 +24,7 @@ document.addEventListener('click', function (event) {
   //    the return then ends the function so it doesn't continue down evalutating more stuff
 	if (event.target.matches('.click-me')) { 
     console.log('This is happening!');
-    event.target.innerHTML = "<div>CHANGED!</div>";
+    event.target.innerHTML = "<div>Changed!</div>";
     return;
   }
 
@@ -34,8 +34,9 @@ document.addEventListener('click', function (event) {
   //    the return then ends the function so it doesn't continue down evalutating more stuff
   if (event.target.matches('#special-click-me')) { 
     console.log('Fuck yeah, this is happening!');
-    event.target.innerHTML = "<div>FUCK YOU BITCH!</div>";
+    event.target.innerHTML = "<div>Fuck You Bitch</div>";
     return;
   }
+
 
 });
