@@ -20,7 +20,30 @@
     <!-- or importing stylesheets -->
     <link rel="stylesheet" href="../stylesheets/main.css">
     <!-- or importing scripts -->
-    <script src="../javascript/main.js"></script>
+    <!-- instead of importing our own script, I'm importing one from the internet this time -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--
+      What the fuck is jQuery?
+        jQuery is a JavaScript library.
+      
+      What is a JavaScript library?
+        Well, vanilla (basic) JavaScript can get tedious to write. JavaScript libraries are more JavaScript
+        code, where someone else has done the difficult work with vanilla JS to create new functions that
+        are simpler to use.
+
+      But what does jQuery make easier?
+        jQuery is for UI/frontend work. It makes it easier to pick/find HTML elements (by class, id, any attribute
+        on the HTML element), and then do something to or with that element.
+
+        Example:
+          * $('.c1').on('click', function() { /* do something */ }); // Does somthing whenever any element with class "c1" is clicked
+          * $('#i1').click(); // simulates a mouse click on the element with id "i1"
+      
+      jQuery is used in a lot of places (I think). We're only going to spend like 30m on it though. Because React
+      is more important.
+
+      So today, we'll recreate what is in src/frontend/javascript/main.js, but we'll do it on this page.
+    -->
   </head>
 
   <!-- HTML elements can open and close, or open/close in one -->
@@ -71,4 +94,22 @@
     <a href="house.html">DO you DARE to Click me</a>
   </body>
 
+  <script>
+    // that's right, you can add JS into an HTML file, without importing it from somewhere else,
+    // by just putting inside of <script> tags
+    console.log('The script tag JS is running...');
+
+    $(document).ready(function() {
+
+      // i'll give you the first one:
+      $('.click-me').on('click', function(e) {
+        console.log('This is happening!');
+        e.target.innerHTML = "<div>CHANGED!</div>";
+        // we don't need the return here, jQuery makes this a little easier
+      });
+
+      // ADD YOUR NEW JQUERY CODE HERE!!!
+
+    });
+  </script>
 </html>
